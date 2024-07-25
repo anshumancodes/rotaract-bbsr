@@ -3,9 +3,9 @@ import { useState } from 'react';
 
 export const Carousel = () => {
   const slides = [
-    'https://via.placeholder.com/800x400.png?text=Slide+1',
-    'https://via.placeholder.com/800x400.png?text=Slide+2',
-    'https://via.placeholder.com/800x400.png?text=Slide+3'
+    'https://firebasestorage.googleapis.com/v0/b/rotaract-bbsr.appspot.com/o/slider%2Fslider-3.jpg?alt=media&token=2c1879ed-30cb-4d2c-bb8e-054c6f029db6',
+    'https://firebasestorage.googleapis.com/v0/b/rotaract-bbsr.appspot.com/o/slider%2Fslider-2.jpeg?alt=media&token=afdc3a0e-a8bc-469c-b2b1-41a772976e24',
+    'https://firebasestorage.googleapis.com/v0/b/rotaract-bbsr.appspot.com/o/slider%2Fslider-1.jpeg?alt=media&token=a1266d46-5a27-4f0a-a5d1-c5d9f93e4d7e'
   ];
     const [current, setCurrent] = useState(0);
     
