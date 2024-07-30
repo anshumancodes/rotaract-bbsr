@@ -77,7 +77,7 @@ export const Home = () => {
       </div>
 
       <div className="mt-10 flex-col flex justify-center w-full items-center ">
-        <h2 className="py-5 text-3xl font-bold">Founding members</h2>
+        <h2 className="py-5 text-3xl font-bold">Counsil members</h2>
         <div className="w-[80%] md:w-full flex flex-col md:flex-row justify-center gap-14">
           <ProfileView Name={"John doe"} url={"https://images.pexels.com/photos/2379004/pexels-photo-2379004.jpeg?auto=compress&cs=tinysrgb&w=600"}/>
           <ProfileView Name={"John doe"} url={"https://images.pexels.com/photos/2379004/pexels-photo-2379004.jpeg?auto=compress&cs=tinysrgb&w=600"}/>
@@ -87,6 +87,7 @@ export const Home = () => {
         </div>
       </div>
       <Footer/>
+      <footer>note :this page is still under development , its live for testing purposes</footer>
     </main>
   );
 };
