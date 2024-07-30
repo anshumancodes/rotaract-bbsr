@@ -7,12 +7,12 @@ export default function Footer() {
             <div className='flex flex-col md:flex-row gap-14 py-14'>
                 <div className='flex flex-col gap-2 text-dark-primary underline text-base'>
                     <a href="/about">about us</a>
-                    <a href="/counsil">counsil of members</a>
+                    <a href="/council">counsil of members</a>
                     <a href="/blog">explore blogs</a>
                 </div>
                 <div className='flex flex-col gap-2 text-dark-primary underline text-base'>
                     <a href="/gallery">gallery</a>
-                    <a href="/rules">membership rules</a>
+                    <a href="">membership rules</a>
                     <a href="https://docs.google.com/forms/d/e/1FAIpQLSfPwZENdS5zO6lYrVN_sX5a_kZJEQTQvuyJcx5pk6yslo6OMA/viewform?usp=sharing">Application for membership</a>
                 </div>
                 <div className='flex flex-col gap-2 text-dark-primary underline text-base'>
