@@ -3,11 +3,11 @@ import React from 'react'
 export default function Footer() {
   return (
     <div>
-        <footer className=" bg-gray-400 flex flex-col  w-full items-center justify-center">
+        <footer className=" bg-gray-900 flex flex-col  w-full items-center justify-center">
             <div className='flex flex-col md:flex-row gap-14 py-14'>
                 <div className='flex flex-col gap-2 text-dark-primary underline text-base'>
                     <a href="/about">about us</a>
-                    <a href="/council">counsil of members</a>
+                    <a href="/council">council  of members</a>
                     <a href="/blog">explore blogs</a>
                 </div>
                 <div className='flex flex-col gap-2 text-dark-primary underline text-base'>
