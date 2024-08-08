@@ -39,7 +39,7 @@ export default function Nav() {
           <a href="/gallery" className="block text-dark-primary  px-3 py-2 rounded-md text-base font-medium">gallery</a>
           <a href="/blog" className="block text-dark-primary  px-3 py-2 rounded-md text-base font-medium">blog</a>
          
-          <a href="/counsil" className="text-dark-primary hover:text-gray-900 px-3 py-2 rounded-md text-base font-medium block">council</a>
+          <a href="/council " className="text-dark-primary hover:text-gray-900 px-3 py-2 rounded-md text-base font-medium block">council</a>
           <button className="w-full bg-pink-primary  text-white-primary font-bold py-2 px-4 ">
            <a href="https://docs.google.com/forms/d/e/1FAIpQLSfPwZENdS5zO6lYrVN_sX5a_kZJEQTQvuyJcx5pk6yslo6OMA/viewform?usp=sharing">Join the club</a>
           </button>
