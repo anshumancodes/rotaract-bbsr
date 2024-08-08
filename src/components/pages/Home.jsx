@@ -48,8 +48,8 @@ export const Home = () => {
       </div>
 
       <div className="w-full flex justify-center items-center mb-10 mt-20">
-        <div className="bg-gray-400 md:w-[60%] md:h-[200px] text-center items-center flex flex-col justify-center py-3">
-          <p className="px-8">
+        <div className="bg-gray-900 md:w-[60%] md:h-[200px] text-center items-center flex flex-col justify-center py-3">
+          <p className="px-8 text-white-primary">
             Our club is anchored on strong relationships and an active
             membership. One that encourages members to collectively find ways to
             improve the quality of life for people in our communities and to
@@ -76,18 +76,18 @@ export const Home = () => {
         </div>
       </div>
 
-      <div className="mt-10 flex-col flex justify-center w-full items-center ">
-        <h2 className="py-5 text-3xl font-bold">Counsil members</h2>
+      <div className="mt-10 flex-col flex justify-center w-full items-center py-5">
+        <h2 className="py-5 text-3xl font-bold">Council  members</h2>
         <div className="w-[80%] md:w-full flex flex-col md:flex-row justify-center gap-14">
-          <ProfileView Name={"John doe"} url={"https://images.pexels.com/photos/2379004/pexels-photo-2379004.jpeg?auto=compress&cs=tinysrgb&w=600"}/>
-          <ProfileView Name={"John doe"} url={"https://images.pexels.com/photos/2379004/pexels-photo-2379004.jpeg?auto=compress&cs=tinysrgb&w=600"}/>
-          <ProfileView Name={"John doe"} url={"https://images.pexels.com/photos/2379004/pexels-photo-2379004.jpeg?auto=compress&cs=tinysrgb&w=600"}/>
+          <ProfileView Name={"Rahul Sasmal"} post={"president"} show link={"/council"} url={"https://firebasestorage.googleapis.com/v0/b/rotaract-bbsr.appspot.com/o/council%2Fpresident.jpeg?alt=media&token=18ca1600-67ca-4e16-8702-d5070e749456"}/>
+          <ProfileView Name={"Pratyush kar"} post={"Vice president"} show link={"/council"}  url={"https://firebasestorage.googleapis.com/v0/b/rotaract-bbsr.appspot.com/o/council%2Fvice-president.jpeg?alt=media&token=1a42191b-ad84-4e94-bd25-b8a2642957aa"}/>
+          <ProfileView Name={"Rudraditya Mallick "} post={" Secretary"} show link={"/council"} url={"https://firebasestorage.googleapis.com/v0/b/rotaract-bbsr.appspot.com/o/council%2Fsecretary.jpeg?alt=media&token=abe41d3a-978c-422a-84cf-52d50afe8572"}/>
           
 
         </div>
       </div>
       <Footer/>
-      <footer>note :this page is still under development , its live for testing purposes</footer>
+     
     </main>
   );
 };
