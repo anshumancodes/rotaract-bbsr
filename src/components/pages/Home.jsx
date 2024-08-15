@@ -82,7 +82,8 @@ export const Home = () => {
           <ProfileView Name={"Rahul Sasmal"} post={"president"} show link={"/council"} url={"https://firebasestorage.googleapis.com/v0/b/rotaract-bbsr.appspot.com/o/council%2Fpresident.jpeg?alt=media&token=18ca1600-67ca-4e16-8702-d5070e749456"}/>
           <ProfileView Name={"Pratyush kar"} post={"Vice president"} show link={"/council"}  url={"https://firebasestorage.googleapis.com/v0/b/rotaract-bbsr.appspot.com/o/council%2Fvice-president.jpeg?alt=media&token=1a42191b-ad84-4e94-bd25-b8a2642957aa"}/>
           <ProfileView Name={"Rudraditya Mallick "} post={" Secretary"} show link={"/council"} url={"https://firebasestorage.googleapis.com/v0/b/rotaract-bbsr.appspot.com/o/council%2Fsecretary.jpeg?alt=media&token=abe41d3a-978c-422a-84cf-52d50afe8572"}/>
-          
+          <ProfileView Name={"Soham Pattnaik"} post={"Treasurer"} show link={"/council"} url={"https://firebasestorage.googleapis.com/v0/b/rotaract-bbsr.appspot.com/o/council%2Ftresurer.jpeg?alt=media&token=8c9a849b-2913-4c78-ad38-8604dc84d923"}/>
+          <ProfileView Name={"Biswajeet Ganthia"} post={"Relations Manager"} show link={"/council"} url={"https://firebasestorage.googleapis.com/v0/b/rotaract-bbsr.appspot.com/o/council%2Fclub-manager.jpeg?alt=media&token=ae8d9ce3-cad7-455d-85df-f3bdcbf74fb6"}/>
 
         </div>
       </div>
