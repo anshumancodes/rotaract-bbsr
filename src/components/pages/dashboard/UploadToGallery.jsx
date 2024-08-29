@@ -18,12 +18,8 @@ const UploadToGallery = () => {
         </div>
         <div className="space-y-4 px-8 py-10">
           <div>
-          <span className="text-gray-600">{selectedFile.name}</span>
-            <span className="float-right text-sm text-gray-400">45MB/s</span>
-            <div className="h-2 overflow-hidden rounded-full bg-gray-300">
-              <div className="h-full w-8/12 bg-blue-500"></div>
-            </div>
-            <p className="text-sm text-blue-500">Paused</p>
+          <span className="text-gray-600">{selectedFile?.name || ""}</span>
+           
           </div>
 
           <div className="flex flex-col items-center justify-center rounded-lg border-4 border-dashed px-4 py-10">
