@@ -5,7 +5,7 @@ import Gallery from "./Gallery";
 import ProfileView from "../global/ProfileView";
 import Footer from "../global/Footer";
 
-export const Home = () => {
+const Home = () => {
   return (
     <main className="bg-white-primary">
       <Nav />
@@ -92,3 +92,6 @@ export const Home = () => {
     </main>
   );
 };
+
+
+export default Home;
