@@ -3,7 +3,7 @@ import Gallery from '../Gallery'
 import Nav from '../../global/Nav'
 import Footer from '../../global/Footer'
 
-export const Gallerypage = () => {
+export default Gallerypage = () => {
   return (
     <div >
       <Nav/>
