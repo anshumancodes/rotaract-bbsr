@@ -5,7 +5,7 @@ export default function ProfileView({url,Name,link,post,show}) {
     <div>
       <div className="flex-col flex gap-2 items-center justify-center">
         <div className="profile__img">
-          {url?  <img src={url} alt={`${Name}`} className='max-w-[200px]'/>:<img/>}
+          {url?  <img src={url} alt={`${Name}`} className='max-w-[200px] max-h-[200px]'/>:<img/>}
         </div>
         <div className="profile__name">
             <p className='font-bold text-xl'>{Name}</p>
