@@ -18,14 +18,14 @@ export default function Footer() {
                 <div className='flex flex-col gap-2 text-dark-primary underline text-base'>
                     <a href="">Make a donation</a>
                     <a href="">contact us !</a>
-                    <a href="" className='text-blue-primary'>login as admin</a>
+                    <a href="/dashboard" className='text-blue-400'>login as admin</a>
                 </div>
 
             
             </div>
 
             <div className='text-dark-primary py-4 w-full justify-center flex'>Copyright&copy; rotract Bhubaneswar sunshine {new Date().getFullYear()}</div>
-            <div className='text-dark-primary py-4 w-full justify-center flex gap-1'>developed and maintained by  <a href="https://anshumancdx.xyz" className='text-blue-primary underline'> anshumancdx</a></div>
+            <div className='text-dark-primary py-4 w-full justify-center flex gap-1'>developed and maintained by  <a href="https://anshumancdx.xyz" className='text-blue-400 underline'> anshumancdx</a></div>
             
 
         </footer>
