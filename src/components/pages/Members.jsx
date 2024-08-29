@@ -18,7 +18,9 @@ const Members = () => {
           <ProfileView Name={"Rudraditya Mallick "} post={" Secretary"}url={"https://firebasestorage.googleapis.com/v0/b/rotaract-bbsr.appspot.com/o/council%2Fsecretary.jpeg?alt=media&token=abe41d3a-978c-422a-84cf-52d50afe8572"}/>
           <p  className=' w-[80%] lg:w-[40%] text-gray-500'>Rudraditya brings precision and order to his role, ensuring smooth operations within the club. He is currently pursuing a Bachelor's degree in Chemistry and is passionate about effective communication and transparency, contributing to the club’s efficiency and organizational structure.</p>
           <ProfileView Name={"Soham Pattnaik"} post={"Treasurer"} show link={"/council"} url={"https://firebasestorage.googleapis.com/v0/b/rotaract-bbsr.appspot.com/o/council%2Ftresurer.jpeg?alt=media&token=8c9a849b-2913-4c78-ad38-8604dc84d923"}/>
+          <p  className=' w-[80%] lg:w-[40%] text-gray-500'>Soham manages the club’s finances with expertise, ensuring resources are maximized for community projects. Currently pursuing a Bachelor's degree in Agricultural Sciences, he is passionate about financial literacy and resource management, playing a crucial role in the club’s financial planning.</p>
           <ProfileView Name={"Biswajeet Ganthia"} post={"Relations Manager"} show link={"/council"} url={"https://firebasestorage.googleapis.com/v0/b/rotaract-bbsr.appspot.com/o/council%2Fclub-manager.jpeg?alt=media&token=ae8d9ce3-cad7-455d-85df-f3bdcbf74fb6"}/>
+          <p  className=' w-[80%] lg:w-[40%] text-gray-500'>Biswajeet excels in building strong connections with the community and other clubs. He is currently pursuing a Bachelor's degree in Technology and is passionate about outreach and partnerships, enhancing the club’s visibility and engagement within the broader community.</p>
 
 
         </div>
