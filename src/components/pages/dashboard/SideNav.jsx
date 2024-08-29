@@ -1,22 +1,28 @@
 import React from 'react';
-import { Users2Icon ,Upload,Edit,ChartPieIcon} from 'lucide-react';
+import { Users2Icon, Upload, Edit, ChartPieIcon } from 'lucide-react';
 
-export const SideNav = () => {
+export const SideNav = ({ setSelectedPage }) => {
   return (
     <div>
-      <div className="min-h-screen  bg-gray-50">
+      <div className="min-h-screen bg-gray-50">
         <div className="absolute left-0 flex h-screen w-72 flex-col overflow-hidden rounded-r-2xl bg-gray-700 text-white">
-          <h1 className="mt-10 ml-10 text-3xl font-bold">Rotaract</h1>
+          <h1 className="mt-10 ml-10 text-2xl font-bold">Rotaract sunshine</h1>
           <ul className="mt-20 space-y-3">
-            <li className="relative flex cursor-pointer space-x-2 rounded-md py-4 px-10 text-gray-300 hover:bg-slate-600">
+            <li
+              onClick={() => setSelectedPage('members')}
+              className="relative flex cursor-pointer space-x-2 rounded-md py-4 px-10 text-gray-300 hover:bg-slate-600"
+            >
               <span>
-                <Users2Icon/>
+                <Users2Icon />
               </span>
               <span>Manage Members</span>
             </li>
-            <li className="relative flex cursor-pointer space-x-2 rounded-md py-4 px-10 font-semibold hover:bg-slate-600">
+            <li
+              onClick={() => setSelectedPage('upload')}
+              className="relative flex cursor-pointer space-x-2 rounded-md py-4 px-10 font-semibold hover:bg-slate-600"
+            >
               <span>
-                <Upload/>
+                <Upload />
               </span>
               <span>Upload to Gallery</span>
               <svg
@@ -32,32 +38,37 @@ export const SideNav = () => {
                 />
               </svg>
             </li>
-            <li className="relative flex cursor-pointer space-x-2 rounded-md py-4 px-10 text-gray-300 hover:bg-slate-600">
+            <li
+              onClick={() => setSelectedPage('blogs')}
+              className="relative flex cursor-pointer space-x-2 rounded-md py-4 px-10 text-gray-300 hover:bg-slate-600"
+            >
               <span>
-                <Edit/>
+                <Edit />
               </span>
               <span>Manage Blogs</span>
             </li>
-            <li className="relative flex cursor-pointer space-x-2 rounded-md py-4 px-10 text-gray-300 hover:bg-slate-600">
+            <li
+              onClick={() => setSelectedPage('stats')}
+              className="relative flex cursor-pointer space-x-2 rounded-md py-4 px-10 text-gray-300 hover:bg-slate-600"
+            >
               <span className="text-2xl">
-                <ChartPieIcon/>
+                <ChartPieIcon />
               </span>
               <span>Stats</span>
             </li>
-           
-           
           </ul>
 
           <div className="my-6 mt-auto ml-10 flex cursor-pointer">
             <div>
               <img
                 className="h-12 w-12 rounded-full"
-                 src="https://images.unsplash.com/photo-1507143550189-fed454f93097" alt='dog'
+                src="https://images.unsplash.com/photo-1507143550189-fed454f93097"
+                alt="dog"
               />
             </div>
             <div className="ml-3">
               <p className="font-medium">admin</p>
-              <p className="text-sm text-gray-300">Bhubaneswar,Odisha</p>
+              <p className="text-sm text-gray-300">Bhubaneswar, Odisha</p>
             </div>
           </div>
         </div>
@@ -65,3 +76,4 @@ export const SideNav = () => {
     </div>
   );
 };
+
