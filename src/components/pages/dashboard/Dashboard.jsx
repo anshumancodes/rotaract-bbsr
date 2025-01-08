@@ -3,6 +3,7 @@ import { SideNav } from './SideNav.jsx';
 import HandleMembers from './HandleMembers.jsx';
 import UploadToGallery from './UploadToGallery.jsx';
 import Dashstats from './Dashstats.jsx';
+import Blogeditor from '../blog/Blogeditor.jsx';
 
 const Dashboard = () => {
   const [selectedPage, setSelectedPage] = useState('stats'); // Default to 'stats'
@@ -17,11 +18,14 @@ const Dashboard = () => {
       case 'stats':
       default:
         return <Dashstats />;
+      case 'blogs':
+     
+        return <Blogeditor />;
     }
   };
 
   return (
-    <div className='flex flex-col lg:flex-row'>
+    <div className='flex flex-col lg:flex-row gap-10'>
       {/* Sidebar for larger screens */}
       <div className='hidden lg:flex'>
         <SideNav setSelectedPage={setSelectedPage} />
@@ -37,11 +41,13 @@ const Dashboard = () => {
           <button onClick={() => { setSelectedPage('stats'); setIsMobileNavOpen(false); }} className='py-2 px-4 hover:bg-gray-200'>Stats</button>
           <button onClick={() => { setSelectedPage('members'); setIsMobileNavOpen(false); }} className='py-2 px-4 hover:bg-gray-200'>Members</button>
           <button onClick={() => { setSelectedPage('upload'); setIsMobileNavOpen(false); }} className='py-2 px-4 hover:bg-gray-200'>Upload</button>
+          <button onClick={() => { setSelectedPage('blogs'); setIsMobileNavOpen(false); }} className='py-2 px-4 hover:bg-gray-200'>add blogs</button>
+          
         </div>
       </div>
 
       {/* Action Board */}
-      <div className='flex-1 p-4'>
+      <div className='flex-1 p-4 bg-gray-500'>
         <button className='lg:hidden mb-4 p-2 bg-blue-500 text-white rounded' onClick={() => setIsMobileNavOpen(true)}>Open Menu</button>
         {renderPage()}
       </div>
