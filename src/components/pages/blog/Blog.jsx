@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { collection, query, getDocs } from 'firebase/firestore';
 import { db } from '../../../config/firebase';
+import DOMPurify from 'dompurify'; // Import DOMPurify
 
 export default function Blog() {
   const [blogs, setBlogs] = useState([]);
@@ -13,7 +14,6 @@ export default function Blog() {
         const blogsSnapshot = await getDocs(blogQuery);
         const blogsList = blogsSnapshot.docs.map((doc) => ({
           id: doc.id,
-        
           ...doc.data(),
         }));
         console.log(blogsList);
@@ -45,8 +45,30 @@ export default function Blog() {
               <div className="px-5">
                 <h2 className="text-2xl mb-2">{blog.title}</h2>
                 
-              
-                <p className="text-gray-600 text-sm mb-4">{blog.content}</p>
+                {/* Sanitize and maintain HTML structure */}
+                <div
+                  className="text-gray-600 text-sm mb-4"
+                  dangerouslySetInnerHTML={{
+                    __html: DOMPurify.sanitize(blog.content, {
+                      ALLOWED_TAGS: [
+                        'h1',
+                        'h2',
+                        'h3',
+                        'h4',
+                        'h5',
+                        'h6',
+                        'p',
+                        'strong',
+                        'em',
+                        'ul',
+                        'li',
+                        'ol',
+                        'blockquote',
+                      ], // Allow specific HTML tags
+                      ALLOWED_ATTR: [] // You can also control allowed attributes, here none are allowed
+                    }),
+                  }}
+                />
               </div>
             </div>
           ))
@@ -55,9 +77,9 @@ export default function Blog() {
             {blogs ? "No blogs available" : "Loading..."}
           </p>
         )}
-       
       </div>
-      <footer>note :this page is still under development , its live for testing purposes</footer>
+      <footer>note: this page is still under development, it's live for testing purposes</footer>
     </section>
   );
 }
+
