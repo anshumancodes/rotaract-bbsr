@@ -2,8 +2,7 @@ import React from 'react'
 import Gallery from '../Gallery'
 import Nav from '../../global/Nav'
 import Footer from '../../global/Footer'
-
-export default Gallerypage = () => {
+const Gallerypage = () => {
   return (
     <div >
       <Nav/>
@@ -16,3 +15,5 @@ export default Gallerypage = () => {
     </div>
   )
 }
+
+export default Gallerypage
